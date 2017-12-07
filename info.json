@@ -1,0 +1,16 @@
+{
+  "name": "TheyreMadeOutofMeat",
+  "version": "0.1.0",
+  "factorio_version": "0.15",
+  "title": "They're Made Out of Meat",
+  "author": "Nebual",
+  "contact": "nebual@nebtown.info",
+  "homepage": "",
+  "description": "Meat. Blood Processing. Bone Processing. Compressed Meat Fuel.",
+  "dependencies": [
+    "base >= 0.15.0", 
+    "? angelsbioprocessing >= 0.4.0",
+    "? angelsrefining >= 0.8.0",
+    "? bobgreenhouse >= 0.15.0"
+  ]
+}
