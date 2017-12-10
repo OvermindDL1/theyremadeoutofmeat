@@ -1,6 +1,7 @@
-if angelsmods and angelsmods.refining then
+if angelsmods and angelsmods.petrochem then
     data.raw.recipe["dry-meat"].category = "liquifying"
-    data.raw.recipe["compress-meat"].category = "blast-smelting"
+    table.insert(data.raw["technology"]["meat-blood-processing"].prerequisites, "basic-chemistry")
+
 	angelsmods.functions.OV.remove_input("solid-fuel-meat", "heavy-oil")
     angelsmods.functions.OV.patch_recipes({
         {
@@ -16,6 +17,11 @@ if angelsmods and angelsmods.refining then
             },
         }
     })
+end
+
+if angelsmods and angelsmods.smelting then
+    data.raw.recipe["compress-meat"].category = "blast-smelting"
+    table.insert(data.raw["technology"]["meat-fuel-processing"].prerequisites, "angels-metallurgy-1")
 end
 
 if angelsmods and angelsmods.bioprocessing then
