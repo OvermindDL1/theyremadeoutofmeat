@@ -41,7 +41,7 @@ data:extend({
                 }
             }
         },
-        magazine_size = 50,
+        magazine_size = 25,
         subgroup = "ammo",
         order = "a[basic-clips]-a[firearm-magazine-bone]",
         stack_size = 200

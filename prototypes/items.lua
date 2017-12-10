@@ -8,7 +8,7 @@ data:extend({
         fuel_category = "chemical",
         subgroup = "meat-products",
         order = "a[meat-1]",
-        stack_size = 25
+        stack_size = 50
     },
     {
         type = "item",
@@ -19,7 +19,7 @@ data:extend({
         fuel_category = "meat",
         subgroup = "meat-products",
         order = "a[meat-2]",
-        stack_size = 25
+        stack_size = 50
     },
     {
         type = "item",
@@ -30,7 +30,7 @@ data:extend({
         fuel_category = "meat",
         subgroup = "meat-products",
         order = "a[meat-3]",
-        stack_size = 50
+        stack_size = 100
     },
     {
         type = "item",
