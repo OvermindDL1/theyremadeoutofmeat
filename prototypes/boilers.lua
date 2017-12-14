@@ -1,6 +1,6 @@
 data:extend({
     {
-        type = "smoke",
+        type = "trivial-smoke",
         name = "meat-smoke",
         flags = {"not-on-map"},
         duration = 900,
@@ -37,6 +37,7 @@ data:extend({
         type = "item",
         name = "meat-boiler",
         icon = "__base__/graphics/icons/boiler.png",
+        icon_size = 32,
         flags = {"goes-to-quickbar"},
         subgroup = "meat-products",
         order = "b[steam-power]-a[boiler]",
@@ -47,6 +48,7 @@ data:extend({
         type = "boiler",
         name = "meat-boiler",
         icon = "__base__/graphics/icons/boiler.png",
+        icon_size = 32,
         flags = {"placeable-neutral", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "meat-boiler"},
         max_health = 250,

@@ -3,6 +3,7 @@ data:extend({
         type = "item",
         name = "bone-floor",
         icon = "__TheyreMadeOutofMeat__/graphics/icons/meat-bones.png", -- todo
+        icon_size = 32,
         flags = {"goes-to-main-inventory"},
         subgroup = "meat-products",
         order = "a[meat-bone-floor]",
@@ -55,43 +56,30 @@ data:extend({
             },
             inner_corner = {
                 picture = "__base__/graphics/terrain/stone-path/stone-path-inner-corner.png",
-                count = 8
+                count = 16,
+                tall = true
             },
             outer_corner = {
                 picture = "__base__/graphics/terrain/stone-path/stone-path-outer-corner.png",
-                count = 1
+                count = 8,
+                tall = true
             },
             side = {
                 picture = "__base__/graphics/terrain/stone-path/stone-path-side.png",
-                count = 10
+                count = 16,
+                tall = true
             },
             u_transition = {
                 picture = "__base__/graphics/terrain/stone-path/stone-path-u.png",
-                count = 10
+                count = 8,
+                tall = true
             },
             o_transition = {
                 picture = "__base__/graphics/terrain/stone-path/stone-path-o.png",
-                count = 10
+                count = 4
             }
         },
-        walking_sound = {
-            {
-                filename = "__base__/sound/walking/concrete-01.ogg",
-                volume = 1.2
-            },
-            {
-                filename = "__base__/sound/walking/concrete-02.ogg",
-                volume = 1.2
-            },
-            {
-                filename = "__base__/sound/walking/concrete-03.ogg",
-                volume = 1.2
-            },
-            {
-                filename = "__base__/sound/walking/concrete-04.ogg",
-                volume = 1.2
-            }
-        },
+        walking_sound = data.raw.tile['stone-path'].walking_sound,
         map_color = {r = 50, g = 50, b = 50},
         ageing = 0.0004,
         vehicle_friction_modifier = 10

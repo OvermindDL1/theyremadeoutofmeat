@@ -8,6 +8,7 @@ if angelsmods and angelsmods.petrochem then
             name = "solid-fuel-meat",
             category = "liquifying",
             icon = "__angelspetrochem__/graphics/icons/solid-fuel-naphtha.png",
+            icon_size = 32,
             ingredients = {
                 {type = "item", name = "compressed-meat-cube", amount = 1},
                 {type = "fluid", name = "liquid-naphtha", amount = 50}

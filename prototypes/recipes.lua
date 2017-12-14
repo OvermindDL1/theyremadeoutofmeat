@@ -14,6 +14,7 @@ data:extend({
             {type = "fluid", name = "liquid-blood", amount = 100}
         },
         icon = "__TheyreMadeOutofMeat__/graphics/icons/dry-meat.png",
+        icon_size = 32,
         order = "a[meat-1]"
     },
     {
@@ -30,6 +31,7 @@ data:extend({
             {type = "item", name = "meat-bones", amount = 2}
         },
         icon = "__TheyreMadeOutofMeat__/graphics/icons/boneless-meat.png",
+        icon_size = 32,
         order = "a[meat-2]"
     },
     {
@@ -47,6 +49,7 @@ data:extend({
             {type = "item", name = "compressed-meat-cube", amount = 1}
         },
         icon = "__TheyreMadeOutofMeat__/graphics/icons/compressed-meat-cube.png",
+        icon_size = 32,
         order = "a[meat-3]"
     },
     {
@@ -62,6 +65,7 @@ data:extend({
             {type = "item", name = "solid-fuel", amount = 1} -- produces 2 via angelsrefining
         },
         icon = "__base__/graphics/icons/solid-fuel-from-heavy-oil.png", -- "__angelspetrochem__/graphics/icons/solid-fuel-naphtha.png" via angelsrefining
+        icon_size = 32,
         subgroup = "meat-products",
         enabled = false,
         order = "a[meat-4]",
@@ -82,7 +86,8 @@ data:extend({
         results = {
             {type = "item", name = "meat-burger", amount = 1}
         },
-        icon = "__TheyreMadeOutofMeat__/graphics/icons/meat-burger.png", -- todo
+        icon = "__TheyreMadeOutofMeat__/graphics/icons/meat-burger.png",
+        icon_size = 32,
         order = "a[meat-burger]"
     }
 })

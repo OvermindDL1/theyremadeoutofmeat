@@ -3,6 +3,7 @@ data:extend({
         type = "item",
         name = "meat-roboport",
         icon = "__base__/graphics/icons/roboport.png",
+        icon_size = 32,
         flags = {"goes-to-main-inventory"},
         subgroup = "meat-products",
         order = "a[meat-robotics]-a[roboport]",
@@ -25,6 +26,7 @@ data:extend({
         type = "item",
         name = "meat-chest",
         icon = "__base__/graphics/icons/logistic-chest-storage.png",
+        icon_size = 32,
         flags = {"goes-to-quickbar"},
         subgroup = "meat-products",
         order = "a[meat-robotics]-b[chest]",
@@ -46,6 +48,7 @@ data:extend({
         type = "logistic-container",
         name = "meat-chest",
         icon = "__base__/graphics/icons/logistic-chest-storage.png",
+        icon_size = 32,
         flags = {"placeable-player", "player-creation"},
         minable = {hardness = 0.2, mining_time = 0.5, result = "meat-chest"},
         max_health = 350,
@@ -86,12 +89,13 @@ data:extend({
             }
         },
         circuit_wire_max_distance = 9,
-        circuit_connector_sprites = get_circuit_connector_sprites({0.1875, 0.15625}, nil, 18)
+        circuit_connector_sprites = data.raw["logistic-container"]["logistic-chest-requester"].circuit_connector_sprites
     },
     {
         type = "item",
         name = "meat-robot",
         icon = "__base__/graphics/icons/construction-robot.png", -- todo cover in meat
+        icon_size = 32,
         flags = {"goes-to-main-inventory"},
         subgroup = "meat-products",
         order = "a[meat-robotics]-c[robot]",
@@ -112,6 +116,7 @@ data:extend({
         type = "construction-robot",
         name = "meat-robot",
         icon = "__base__/graphics/icons/construction-robot.png",
+        icon_size = 32,
         flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
         minable = {hardness = 0.1, mining_time = 0.1, result = "meat-robot"},
         resistances = {{type = "fire", percent = 85}},

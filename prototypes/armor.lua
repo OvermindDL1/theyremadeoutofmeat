@@ -10,7 +10,8 @@ data:extend({
     {
         type = "armor",
         name = "bone-armor",
-        icon = "__TheyreMadeOutofMeat__/graphics/icons/bone-armor.png", -- todo
+        icon = "__TheyreMadeOutofMeat__/graphics/icons/bone-armor.png",
+        icon_size = 32,
         flags = {"goes-to-quickbar"},
         resistances = {
             {
@@ -44,6 +45,7 @@ data:extend({
         type = "item",
         name = "bone-armor-speedmod",
         icon = "__base__/graphics/icons/exoskeleton-equipment.png",
+        icon_size = 32,
         flags = {"goes-to-main-inventory", "hidden"},
         subgroup = "meat-products",
         order = "a[meat-bone-armor-speedmod]",

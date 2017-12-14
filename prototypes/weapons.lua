@@ -11,6 +11,7 @@ data:extend({
         type = "ammo",
         name = "bone-bullets",
         icon = "__TheyreMadeOutofMeat__/graphics/icons/bone-bullets.png",
+        icon_size = 32,
         flags = {"goes-to-main-inventory"},
         ammo_type = {
             category = "bullet",
@@ -61,6 +62,7 @@ data:extend({
         type = "mining-tool",
         name = "bone-axe",
         icon = "__base__/graphics/icons/steel-axe.png", -- todo
+        icon_size = 32,
         flags = {"goes-to-main-inventory"},
         action = {
             type = "direct",
