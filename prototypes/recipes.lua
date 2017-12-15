@@ -42,7 +42,7 @@ data:extend({
         energy_required = 16,
         enabled = false,
         ingredients = {
-            {type = "item", name = "boneless-meat", amount = 16},
+            {type = "item", name = "boneless-meat", amount = 12},
             {type = "item", name = "wood", amount = 4} -- angelsbioprocessing: 8 cellulose-fibre
         },
         results = {

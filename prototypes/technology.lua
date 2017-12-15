@@ -4,7 +4,7 @@ data:extend({
         name = "meat-blood-processing",
         icon = "__TheyreMadeOutofMeat__/graphics/icons/technology/liquid-blood.png",
         icon_size = 128,
-        prerequisites = {},
+        prerequisites = {"automation-2"},
         effects = {
             {
                 type = "unlock-recipe",
@@ -20,7 +20,7 @@ data:extend({
             ingredients = {
                 {"science-pack-1", 1},
             },
-            time = 30
+            time = 15
         },
         order = "meat-a-a"
     },
@@ -61,7 +61,7 @@ data:extend({
             ingredients = {
                 {"science-pack-1", 1},
             },
-            time = 30
+            time = 25
         },
         order = "meat-a-b"
     },

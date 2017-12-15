@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 14. 12. 2017
+  Changes:
+    - Fixed Blood Boilers heating blood in 0.16, instead of producing steam
+    - Bone Armor, Compressed Meat Cubes recipe now cheaper
+---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 13. 12. 2017
   Changes:

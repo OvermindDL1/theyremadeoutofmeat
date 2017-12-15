@@ -50,13 +50,24 @@ data:extend({
     {
         type = "recipe",
         name = "bone-axe",
-        enabled = false,
-        energy_required = 1,
-        ingredients = {
-            {"iron-stick", 2},
-            {"meat-bones", 10}
+        normal = {
+            enabled = false,
+            energy_required = 1,
+            ingredients = {
+                {"iron-stick", 2},
+                {"meat-bones", 10}
+            },
+            result = "bone-axe"
         },
-        result = "bone-axe"
+        expensive = {
+            enabled = false,
+            energy_required = 1,
+            ingredients = {
+                {"iron-stick", 2},
+                {"meat-bones", 40}
+            },
+            result = "bone-axe"
+        },
     },
     {
         type = "mining-tool",
@@ -74,7 +85,7 @@ data:extend({
                 }
             }
         },
-        durability = 5000,
+        durability = 2500,
         subgroup = "tool",
         order = "a[mining]-bb[bone-axe]",
         speed = 4,

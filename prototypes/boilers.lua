@@ -56,56 +56,51 @@ data:extend({
         vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
         mode = "output-to-separate-pipe",
         resistances = {
-            {
-                type = "fire",
-                percent = 90
-            },
-            {
-                type = "explosion",
-                percent = 30
-            },
-            {
-                type = "impact",
-                percent = 30
-            }
+          {
+            type = "fire",
+            percent = 90
+          },
+          {
+            type = "explosion",
+            percent = 30
+          },
+          {
+            type = "impact",
+            percent = 30
+          }
         },
         fast_replaceable_group = "boiler",
         collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
         selection_box = {{-1.5, -1}, {1.5, 1}},
-        target_temperature = 235,
+        target_temperature = 165,
         fluid_box = {
-            base_area = 1,
-            height = 2,
-            base_level = -1,
-            pipe_covers = pipecoverspictures(),
-            pipe_connections = {
-                {type = "input-output", position = {-2, 0.5}},
-                {type = "input-output", position = {2, 0.5}}
-            },
-            production_type = "input-output"
+          base_area = 1,
+          height = 2,
+          base_level = -1,
+          pipe_covers = pipecoverspictures(),
+          pipe_connections = {
+            {type = "input-output", position = {-2, 0.5}},
+            {type = "input-output", position = {2, 0.5}}
+          },
+          production_type = "input-output",
+          filter = "liquid-blood"
         },
         output_fluid_box = {
-            base_area = 1,
-            height = 2,
-            pipe_covers = pipecoverspictures(),
-            pipe_connections = {
-                {type = "output", position = {0, -1.5}}
-            },
-            production_type = "output"
-        },
-        fluid_input = {
-            name = "liquid-blood",
-            amount = 0.0
-        },
-        fluid_output = {
-            name = "steam",
-            amount = 0.0
+          base_area = 1,
+          height = 2,
+          base_level = 1,
+          pipe_covers = pipecoverspictures(),
+          pipe_connections = {
+            {type = "output", position = {0, -1.5}}
+          },
+          production_type = "output",
+          filter = "steam"
         },
         energy_consumption = "1.8MW",
         energy_source = {
             type = "burner",
             fuel_category = "meat",
-            effectivity = 0.75,
+            effectivity = 0.7,
             fuel_inventory_size = 1,
             emissions = 0.1 / 13,
             smoke = {

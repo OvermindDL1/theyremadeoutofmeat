@@ -2,10 +2,21 @@ data:extend({
     {
         type = "recipe",
         name = "bone-armor",
-        enabled = false,
-        energy_required = 30,
-        ingredients = {{"meat-bones", 200}},
-        result = "bone-armor"
+        normal = {
+            enabled = false,
+            energy_required = 20,
+            ingredients = {{"meat-bones", 100}},
+            result = "bone-armor"
+        },
+        expensive = {
+            enabled = false,
+            energy_required = 30,
+            ingredients = {
+                {"meat-bones", 200},
+                {"steel-plate", 20}
+            },
+            result = "bone-armor"
+        },
     },
     {
         type = "armor",
@@ -16,12 +27,12 @@ data:extend({
         resistances = {
             {
                 type = "physical",
-                decrease = 8,
+                decrease = 7,
                 percent = 40
             },
             {
                 type = "acid",
-                decrease = 8,
+                decrease = 7,
                 percent = 40
             },
             {
@@ -35,7 +46,7 @@ data:extend({
                 percent = 40
             }
         },
-        durability = 2500,
+        durability = 1000,
         subgroup = "armor",
         order = "a[meat-bone-armor]",
         equipment_grid = "bone-armor-equipment-grid",
